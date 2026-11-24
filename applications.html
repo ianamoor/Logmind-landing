@@ -1452,6 +1452,11 @@ main.fpg section#customers,main section#customers{padding-bottom:70px!important}
 #mp-platform .cols section:first-child .mit small{font-size:15px!important}
 /* header logo 125px wide (Lana, 2026-11-23) */
 nav#nav .logo svg,.drawer .logo svg{width:125px!important;height:auto!important}
+/* solution page hero: cube icon above the title, same as the Solutions menu icon (Lana, 2026-11-24) */
+.fh-c .fh-cube{display:block;width:76px;height:76px;margin:0 auto 22px;background:center/contain no-repeat;filter:drop-shadow(0 10px 24px rgba(48,97,224,.45))}
+@media(max-width:700px){.fh-c .fh-cube{width:58px;height:58px;margin-bottom:16px}}
+/* Signals to Stability cards: wireframe cube icons like the menu (Lana, 2026-11-24) */
+.fsig .sgi{width:52px!important;height:52px!important;background-size:contain!important}
 </style></head>
 <body>
 <nav id="nav"><a class="logo" href="index.html" aria-label="Logmind"><svg aria-hidden="true" focusable="false" viewBox="0 0 160 49" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1471,6 +1476,7 @@ nav#nav .logo svg,.drawer .logo svg{width:125px!important;height:auto!important}
  <div class="fh-bg" aria-hidden="true"></div>
  <div class="w">
   <div class="fh-c">
+   <span class="fh-cube" style="background-image:var(--mc-apps)" aria-hidden="true"></span>
    <h1>Applications</h1>
    <p class="lede">Keep your applications running error-free by automatically identifying issues and receiving solution recommendations</p>
   </div>
@@ -1525,9 +1531,9 @@ nav#nav .logo svg,.drawer .logo svg{width:125px!important;height:auto!important}
    <div class="btns"><a class="btn p" href="free-trial.html">Try it now ➜</a></div>
   </div>
   <ul class="sig3">
-   <li><span class="sgi" style="background-image:var(--mi-pulse)" aria-hidden="true"></span><h3>Detect</h3><p>Find issues early across your stack.</p></li>
-   <li><span class="sgi" style="background-image:var(--mi-search)" aria-hidden="true"></span><h3>Understand</h3><p>Understand root cause with AI.</p></li>
-   <li><span class="sgi" style="background-image:var(--mi-target)" aria-hidden="true"></span><h3>Resolve</h3><p>Take action and prevent recurrence.</p></li>
+   <li><span class="sgi" style="background-image:var(--mc-pulse)" aria-hidden="true"></span><h3>Detect</h3><p>Find issues early across your stack.</p></li>
+   <li><span class="sgi" style="background-image:var(--mc-search)" aria-hidden="true"></span><h3>Understand</h3><p>Understand root cause with AI.</p></li>
+   <li><span class="sgi" style="background-image:var(--mc-target)" aria-hidden="true"></span><h3>Resolve</h3><p>Take action and prevent recurrence.</p></li>
   </ul>
  </div>
 </section>

@@ -1216,6 +1216,12 @@ main.fpg section#customers,main section#customers{padding-bottom:70px!important}
 #mp-platform .cols section:first-child .mit small{font-size:15px!important}
 /* header logo 125px wide (Lana, 2026-11-23) */
 nav#nav .logo svg,.drawer .logo svg{width:125px!important;height:auto!important}
+/* Platform screenshot: hexagon-cube network (gradient SVG) replaces the curly ribbon wave (Lana, 2026-11-20; features.html 2026-11-24) */
+.shots .wv{display:none!important}
+.shots .hexbg{position:absolute;z-index:0;pointer-events:none;left:auto;right:-14%;top:54%;bottom:auto;transform:translateY(-50%);width:86%;height:auto}
+@media(max-width:1320px){.shots .hexbg{right:-6%;width:80%}}
+/* Signals to Stability cards: wireframe cube icons like the menu (Lana, 2026-11-24) */
+.fsig .sgi{width:52px!important;height:52px!important;background-size:contain!important}
 </style></head>
 <body>
 <nav id="nav"><a class="logo" href="index.html" aria-label="Logmind"><svg aria-hidden="true" focusable="false" viewBox="0 0 160 49" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1278,6 +1284,7 @@ nav#nav .logo svg,.drawer .logo svg{width:125px!important;height:auto!important}
    </div>
    <div class="shots">
     <img class="orb orbpng" alt="" aria-hidden="true">
+    <svg class="hexbg" viewBox="-12 -12 1100 1033" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><defs><linearGradient id="hxt" x1="0" y1="0" x2=".18" y2="1"><stop offset="0" stop-color="#6D4893"/><stop offset="1" stop-color="#C765C0"/></linearGradient><linearGradient id="hxl" x1="0" y1="0" x2=".18" y2="1"><stop offset="0" stop-color="#C060BE"/><stop offset=".5" stop-color="#C765C0"/><stop offset="1" stop-color="#3C4BA0"/></linearGradient><linearGradient id="hxr" x1="0" y1="0" x2=".18" y2="1"><stop offset="0" stop-color="#C765C0"/><stop offset=".5" stop-color="#6A55B0"/><stop offset="1" stop-color="#2D4CB4"/></linearGradient><linearGradient id="hxb" x1="0" y1="0" x2=".18" y2="1"><stop offset="0" stop-color="#5A5CC4"/><stop offset=".3" stop-color="#3553C2"/><stop offset="1" stop-color="#21409C"/></linearGradient><linearGradient id="hxl1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C765C0"/><stop offset="1" stop-color="#B05FBF"/></linearGradient><linearGradient id="hxl2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#C765C0"/><stop offset="1" stop-color="#9A5CC0"/></linearGradient><linearGradient id="hxl3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5D55AE"/><stop offset="1" stop-color="#2F4A9E"/></linearGradient><linearGradient id="hxl4" x1="1" y1="0" x2="0" y2="1"><stop stop-color="#2A3F96"/><stop offset="1" stop-color="#26409A"/></linearGradient></defs><g stroke-width="10" stroke-linecap="round"><path d="M375 313L212 436" stroke="url(#hxl1)"/><path d="M712 322L848 442" stroke="url(#hxl2)"/><path d="M290 650L420 731" stroke="url(#hxl3)"/><path d="M787 655L680 731" stroke="url(#hxl4)"/></g><polygon points="552,0 735,110 735,310 552,420 369,310 369,110" fill="url(#hxt)" stroke="url(#hxt)" stroke-width="14" stroke-linejoin="round"/><path d="M369 110L552 220L735 110M552 220V420" stroke="#fff" stroke-opacity=".10" stroke-width="2"/><polygon points="150,393 300,485 300,649 150,741 0,649 0,485" fill="url(#hxl)" stroke="url(#hxl)" stroke-width="14" stroke-linejoin="round"/><path d="M0 485L150 577L300 485M150 577V741" stroke="#fff" stroke-opacity=".10" stroke-width="2"/><polygon points="925,393 1076,485 1076,650 925,742 774,650 774,485" fill="url(#hxr)" stroke="url(#hxr)" stroke-width="14" stroke-linejoin="round"/><path d="M774 485L925 577L1076 485M925 577V742" stroke="#fff" stroke-opacity=".10" stroke-width="2"/><polygon points="552,644 703,742 703,911 552,1009 401,911 401,742" fill="url(#hxb)" stroke="url(#hxb)" stroke-width="14" stroke-linejoin="round"/><path d="M401 742L552 840L703 742M552 840V1009" stroke="#fff" stroke-opacity=".10" stroke-width="2"/></svg>
     <div class="win" aria-hidden="true"><div class="fi on" style="background-image:var(--f0)"></div><div class="fi" style="background-image:var(--f1)"></div><div class="fi" style="background-image:var(--f2)"></div><div class="fi" style="background-image:var(--f3)"></div></div>
     <div class="ftabs" role="navigation" aria-label="Features"><a href="#detect" class="on">Detect &amp;<br>Correlate</a><a href="#inform">Inform &amp;<br>Recommend</a><a href="#investigate">Investigate &amp;<br>Discover</a><a href="#monitor">Monitor &amp;<br>Visualize</a></div>
    </div>
@@ -1304,9 +1311,9 @@ nav#nav .logo svg,.drawer .logo svg{width:125px!important;height:auto!important}
    <div class="btns"><a class="btn p" href="free-trial.html">Try it now ➜</a></div>
   </div>
   <ul class="sig3">
-   <li><span class="sgi" style="background-image:var(--mi-pulse)" aria-hidden="true"></span><h3>Detect</h3><p>Find issues early across your stack.</p></li>
-   <li><span class="sgi" style="background-image:var(--mi-search)" aria-hidden="true"></span><h3>Understand</h3><p>Understand root cause with AI.</p></li>
-   <li><span class="sgi" style="background-image:var(--mi-target)" aria-hidden="true"></span><h3>Resolve</h3><p>Take action and prevent recurrence.</p></li>
+   <li><span class="sgi" style="background-image:var(--mc-pulse)" aria-hidden="true"></span><h3>Detect</h3><p>Find issues early across your stack.</p></li>
+   <li><span class="sgi" style="background-image:var(--mc-search)" aria-hidden="true"></span><h3>Understand</h3><p>Understand root cause with AI.</p></li>
+   <li><span class="sgi" style="background-image:var(--mc-target)" aria-hidden="true"></span><h3>Resolve</h3><p>Take action and prevent recurrence.</p></li>
   </ul>
  </div>
 </section>
