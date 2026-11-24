@@ -1677,7 +1677,7 @@ function ui(p,t){
  const h=ez(cl(p/.09));
  hl.style.transform='none';
  hl.style.opacity=1-cl(p/.06);
- const k=cl((p-.07)/.09);st.style.opacity=k;st.style.transform=`translateY(${40*(1-k)}px)`;
+ const k=cl((p-.07)/.09),ex=trk.offsetTop+trk.offsetHeight-innerHeight,out=1-cl((scrollY-ex+innerHeight*.12)/(innerHeight*.2));st.style.opacity=k*out;st.style.visibility=k*out<.01?'hidden':'';st.style.transform=`translateY(${40*(1-k)}px)`;
  
 }
 function frame(){
